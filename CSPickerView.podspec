@@ -8,35 +8,32 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CSPickerView'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of CSPickerView.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
+  s.version          = '1.0.0'
+  s.summary          = 'CSPickerView'
+  s.description      = "多样式底部弹出样式选择器"
   s.homepage         = 'https://github.com/Coder-Star/CSPickerView'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots     = 'https://github.com/Coder-Star/CSPickerView/raw/main/Sceenshots/startAndEndDate.png', 'https://github.com/Coder-Star/CSPickerView/raw/main/Sceenshots/date.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Coder-Star' => 'litianxing@nowcoder.com' }
+  s.author           = { 'CoderStar' => '1340529758@qq.com' }
   s.source           = { :git => 'https://github.com/Coder-Star/CSPickerView.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.social_media_url = 'https://coder-star.github.io/'
   s.ios.deployment_target = '9.0'
+  s.swift_version = ["5","4.2"]
 
-  s.source_files = 'CSPickerView/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'CSPickerView' => ['CSPickerView/Assets/*.png']
-  # }
+  s.default_subspec = 'framework'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec 'source' do |source|
+    source.source_files = 'LTXiOSUtils/Classes/Util/**/*.swift'
+    source.source_files = 'CSPickerView/Classes/**/*'
+    source.resource_bundles = {
+      'CSPickerView' => ['CSPickerView/Assets/**/*']
+    }
+    source.frameworks = 'Foundation', 'UIKit'
+  end
+
+  s.subspec 'framework' do |framework|
+    framework.frameworks = 'Foundation', 'UIKit'
+    framework.ios.vendored_framework = 'CSPickerView/Frameworks/*.framework'
+    framework.resources = 'CSPickerView/Frameworks/*.bundle'
+  end
 end

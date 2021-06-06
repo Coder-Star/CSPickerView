@@ -2,12 +2,12 @@ use_frameworks!
 
 platform :ios, '9.0'
 
+install! 'cocoapods', :warn_for_unused_master_specs_repo => false
+
 target 'CSPickerView_Example' do
   pod 'CSPickerView', :path => '../'
+#  pod 'CSPickerView', :path => '../', :subspecs => ["source"]
 
-  target 'CSPickerView_Tests' do
-    inherit! :search_paths
-
-    
-  end
+  pod 'SnapKit', '4.2.0'
+  pod 'LookinServer', :configurations => ['Debug'] # 查看UI，只编译进debug版本
 end

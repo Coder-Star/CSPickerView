@@ -1,0 +1,29 @@
+PODS:
+  - CSPickerView (0.1.0):
+    - CSPickerView/framework (= 0.1.0)
+  - CSPickerView/framework (0.1.0)
+  - LookinServer (1.0.2)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - CSPickerView (from `../`)
+  - LookinServer
+  - SnapKit (= 4.2.0)
+
+SPEC REPOS:
+  trunk:
+    - LookinServer
+    - SnapKit
+
+EXTERNAL SOURCES:
+  CSPickerView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CSPickerView: 24a3db7930fa3d5572c568f6d877d6586f9fdef5
+  LookinServer: d6874df8b58096c8d463817b6baaa3abc21d31f7
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: 8b6465639084f7e8d7023f43e2e813850520b8b9
+
+COCOAPODS: 1.10.1

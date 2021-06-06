@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  CSPickerView
+  英文
+  Created by CoderStar on 2021/6/6.
+*/
+
+"CSPickerView.sure" = "Sure";
+"CSPickerView.cancel" = "Cancel";
+"CSPickerView.startEndTime" = "Please Select Start And End Time";
+"CSPickerView.to" = "To";
