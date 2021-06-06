@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'CSPickerView_Example' do
+  pod 'CSPickerView', :path => '../'
+
+  target 'CSPickerView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
