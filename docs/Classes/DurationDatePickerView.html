@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>DurationDatePickerView Class Reference</title>
+    <link rel='stylesheet' type='text/css' href='../css/jazzy.css' />
+    <link rel='stylesheet' type='text/css' href='../css/highlight.css' />
+    <meta charset='utf-8'>
+    <script src='../js/jquery.min.js' defer></script>
+    <script src='../js/jazzy.js' defer></script>
+  </head>
+  <body>
+
+    <a name='//apple_ref/swift/Class/DurationDatePickerView' class='dashAnchor'></a>
+
+    <a title='DurationDatePickerView Class Reference'></a>
+
+    <header class='header'>
+      <p class='header-col header-col--primary'>
+        <a class='header-link' href='../index.html'>
+          CSPickerView Docs
+        </a>
+         (53% documented)
+      </p>
+    
+        <p class='header-col header-col--secondary'>
+          <a class='header-link' href='https://github.com/Coder-Star/CSPickerView'>
+            <img class='header-icon' src='../img/gh.png'/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class='breadcrumbs'>
+      <a class='breadcrumb' href='../index.html'>CSPickerView Reference</a>
+      <img class='carat' src='../img/carat.png' />
+      DurationDatePickerView Class Reference
+    </p>
+
+    <div class='content-wrapper'>
+      <nav class='navigation'>
+        <ul class='nav-groups'>
+          <li class='nav-group-name'>
+            <a class='nav-group-name-link' href='../Classes.html'>Classes</a>
+            <ul class='nav-group-tasks'>
+              <li class='nav-group-task'>
+                <a class='nav-group-task-link' href='../Classes/DatePickerSetting.html'>DatePickerSetting</a>
+              </li>
+              <li class='nav-group-task'>
+                <a class='nav-group-task-link' href='../Classes/DurationDatePickerView.html'>DurationDatePickerView</a>
+              </li>
+              <li class='nav-group-task'>
+                <a class='nav-group-task-link' href='../Classes/PickerView.html'>PickerView</a>
+              </li>
+              <li class='nav-group-task'>
+                <a class='nav-group-task-link' href='../Classes/PickerViewConfig.html'>PickerViewConfig</a>
+              </li>
+              <li class='nav-group-task'>
+                <a class='nav-group-task-link' href='../Classes/PickerViewManager.html'>PickerViewManager</a>
+              </li>
+              <li class='nav-group-task'>
+                <a class='nav-group-task-link' href='../Classes/PickerViewUtils.html'>PickerViewUtils</a>
+              </li>
+              <li class='nav-group-task'>
+                <a class='nav-group-task-link' href='../Classes/SelectPickerView.html'>SelectPickerView</a>
+              </li>
+              <li class='nav-group-task'>
+                <a class='nav-group-task-link' href='../Classes/ToolBarView.html'>ToolBarView</a>
+              </li>
+            </ul>
+          </li>
+          <li class='nav-group-name'>
+            <a class='nav-group-name-link' href='../Enumerations.html'>Enumerations</a>
+            <ul class='nav-group-tasks'>
+              <li class='nav-group-task'>
+                <a class='nav-group-task-link' href='../Enums/CityPickStyle.html'>CityPickStyle</a>
+              </li>
+              <li class='nav-group-task'>
+                <a class='nav-group-task-link' href='../Enums/DurationDatePickerViewDateType.html'>DurationDatePickerViewDateType</a>
+              </li>
+              <li class='nav-group-task'>
+                <a class='nav-group-task-link' href='../Enums/PickerStyles.html'>PickerStyles</a>
+              </li>
+            </ul>
+          </li>
+          <li class='nav-group-name'>
+            <a class='nav-group-name-link' href='../Protocols.html'>Protocols</a>
+            <ul class='nav-group-tasks'>
+              <li class='nav-group-task'>
+                <a class='nav-group-task-link' href='../Protocols/PickerViewDelegate.html'>PickerViewDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class='main-content'>
+
+        <section class='section'>
+          <div class='section-content'>
+            <h1>DurationDatePickerView</h1>
+              <div class='declaration'>
+                <div class='language'>
+                  <pre class="highlight swift"><code><span class="kd">@objcMembers</span>
+<span class="kd">open</span> <span class="kd">class</span> <span class="kt">DurationDatePickerView</span> <span class="p">:</span> <span class="kt">UIView</span></code></pre>
+
+                </div>
+              </div>
+            <p>起止时间弹出框</p>
+
+          </div>
+        </section>
+
+        <section class='section'>
+          <div class='section-content'>
+            <div class="task-group">
+              <ul class='item-container'>
+                <li class="item">
+                  <div class="item-heading">
+                    <code>
+                    <a name="/s:12CSPickerView018DurationDatePickerB0C9SureBlocka"></a>
+                    <a name="//apple_ref/swift/Alias/SureBlock" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12CSPickerView018DurationDatePickerB0C9SureBlocka">SureBlock</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h5>Declaration</h5>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">SureBlock</span> <span class="o">=</span> <span class="p">(</span><span class="n">_</span> <span class="nv">startDate</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">endDate</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="item-heading">
+                    <code>
+                    <a name="/s:12CSPickerView018DurationDatePickerB0C11CancelBlocka"></a>
+                    <a name="//apple_ref/swift/Alias/CancelBlock" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12CSPickerView018DurationDatePickerB0C11CancelBlocka">CancelBlock</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h5>Declaration</h5>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">CancelBlock</span> <span class="o">=</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="item-heading">
+                    <code>
+                    <a name="/c:@M@CSPickerView@objc(cs)DurationDatePickerView(py)canGreatNow"></a>
+                    <a name="//apple_ref/swift/Property/canGreatNow" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@CSPickerView@objc(cs)DurationDatePickerView(py)canGreatNow">canGreatNow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>选择日期是否可大于现在，默认true</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h5>Declaration</h5>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">canGreatNow</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="item-heading">
+                    <code>
+                    <a name="/c:@M@CSPickerView@objc(cs)DurationDatePickerView(py)canLessNow"></a>
+                    <a name="//apple_ref/swift/Property/canLessNow" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@CSPickerView@objc(cs)DurationDatePickerView(py)canLessNow">canLessNow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>选择日期是否可小于现在，默认true</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h5>Declaration</h5>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">canLessNow</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="item-heading">
+                    <code>
+                    <a name="/c:@M@CSPickerView@objc(cs)DurationDatePickerView(py)sureBlock"></a>
+                    <a name="//apple_ref/swift/Property/sureBlock" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@CSPickerView@objc(cs)DurationDatePickerView(py)sureBlock">sureBlock</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>确定闭包</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h5>Declaration</h5>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">sureBlock</span><span class="p">:</span> <span class="kt"><a href="../Classes/DurationDatePickerView.html#/s:12CSPickerView018DurationDatePickerB0C9SureBlocka">SureBlock</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="item-heading">
+                    <code>
+                    <a name="/c:@M@CSPickerView@objc(cs)DurationDatePickerView(py)cancelBlock"></a>
+                    <a name="//apple_ref/swift/Property/cancelBlock" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@CSPickerView@objc(cs)DurationDatePickerView(py)cancelBlock">cancelBlock</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>取消闭包</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h5>Declaration</h5>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">cancelBlock</span><span class="p">:</span> <span class="kt"><a href="../Classes/DurationDatePickerView.html#/s:12CSPickerView018DurationDatePickerB0C11CancelBlocka">CancelBlock</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="item-heading">
+                    <code>
+                    <a name="/c:@M@CSPickerView@objc(cs)DurationDatePickerView(py)titleLabel"></a>
+                    <a name="//apple_ref/swift/Property/titleLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@CSPickerView@objc(cs)DurationDatePickerView(py)titleLabel">titleLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h5>Declaration</h5>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">titleLabel</span><span class="p">:</span> <span class="kt">UILabel</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="item-heading">
+                    <code>
+                    <a name="/c:@M@CSPickerView@objc(cs)DurationDatePickerView(py)startBtn"></a>
+                    <a name="//apple_ref/swift/Property/startBtn" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@CSPickerView@objc(cs)DurationDatePickerView(py)startBtn">startBtn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h5>Declaration</h5>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">startBtn</span><span class="p">:</span> <span class="kt">UIButton</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="item-heading">
+                    <code>
+                    <a name="/c:@M@CSPickerView@objc(cs)DurationDatePickerView(py)endBtn"></a>
+                    <a name="//apple_ref/swift/Property/endBtn" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@CSPickerView@objc(cs)DurationDatePickerView(py)endBtn">endBtn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h5>Declaration</h5>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">endBtn</span><span class="p">:</span> <span class="kt">UIButton</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="item-heading">
+                    <code>
+                    <a name="/c:@M@CSPickerView@objc(cs)DurationDatePickerView(py)cancelBtn"></a>
+                    <a name="//apple_ref/swift/Property/cancelBtn" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@CSPickerView@objc(cs)DurationDatePickerView(py)cancelBtn">cancelBtn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h5>Declaration</h5>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">cancelBtn</span><span class="p">:</span> <span class="kt">UIButton</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="item-heading">
+                    <code>
+                    <a name="/c:@M@CSPickerView@objc(cs)DurationDatePickerView(py)confirmBtn"></a>
+                    <a name="//apple_ref/swift/Property/confirmBtn" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@CSPickerView@objc(cs)DurationDatePickerView(py)confirmBtn">confirmBtn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h5>Declaration</h5>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">confirmBtn</span><span class="p">:</span> <span class="kt">UIButton</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/%E6%9A%B4%E9%9C%B2%E5%87%BA%E5%8E%BB%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%8C%E4%BE%9B%E5%A4%96%E9%83%A8%E8%B0%83%E7%94%A8"></a>
+                <a name="//apple_ref/swift/Section/暴露出去的方法，供外部调用" class="dashAnchor"></a>
+                <a href="#/%E6%9A%B4%E9%9C%B2%E5%87%BA%E5%8E%BB%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%8C%E4%BE%9B%E5%A4%96%E9%83%A8%E8%B0%83%E7%94%A8">
+                  <h3 class="section-name">暴露出去的方法，供外部调用</h3>
+                </a>
+              </div>
+              <ul class='item-container'>
+                <li class="item">
+                  <div class="item-heading">
+                    <code>
+                    <a name="/c:@CM@CSPickerView@objc(cs)DurationDatePickerView(cm)getPopupViewWithStartDate:endDate:dateType:"></a>
+                    <a name="//apple_ref/swift/Method/getPopupView(startDate:endDate:dateType:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@CSPickerView@objc(cs)DurationDatePickerView(cm)getPopupViewWithStartDate:endDate:dateType:">getPopupView(startDate:endDate:dateType:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>展示起止时间弹出框</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h5>Declaration</h5>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">getPopupView</span><span class="p">(</span><span class="nv">startDate</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="nv">endDate</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="nv">dateType</span><span class="p">:</span> <span class="kt"><a href="../Enums/DurationDatePickerViewDateType.html">DurationDatePickerViewDateType</a></span> <span class="o">=</span> <span class="o">.</span><span class="kt">YMD</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">DurationDatePickerView</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h5>Parameters</h5>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>startDate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>开始时间</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>endDate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>结束时间</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dateType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>时间类型</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="item-heading">
+                    <code>
+                    <a name="/c:@CM@CSPickerView@objc(cs)DurationDatePickerView(im)showWithCompletion:"></a>
+                    <a name="//apple_ref/swift/Method/show(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@CSPickerView@objc(cs)DurationDatePickerView(im)showWithCompletion:">show(completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>弹出框显示</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h5>Declaration</h5>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">show</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="item-heading">
+                    <code>
+                    <a name="/c:@CM@CSPickerView@objc(cs)DurationDatePickerView(im)dismissWithCompletion:"></a>
+                    <a name="//apple_ref/swift/Method/dismiss(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@CSPickerView@objc(cs)DurationDatePickerView(im)dismissWithCompletion:">dismiss(completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>弹出框消失</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h5>Declaration</h5>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">dismiss</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class='footer' id="footer">
+      <p>&copy; 2021 <a class="link" href="https://coder-star.github.io/" target="_blank" rel="external">CoderStar</a>. All rights reserved. (Last updated: 2021-06-25)</p>
+    </section>  </body>
+</div>
+</html>

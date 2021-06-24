@@ -1,0 +1,376 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/DurationDatePickerView.swift",
+      "line": 19,
+      "symbol": "DurationDatePickerViewDateType.formatStr",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/DurationDatePickerView.swift",
+      "line": 32,
+      "symbol": "DurationDatePickerView.SureBlock",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/DurationDatePickerView.swift",
+      "line": 33,
+      "symbol": "DurationDatePickerView.CancelBlock",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/DurationDatePickerView.swift",
+      "line": 78,
+      "symbol": "DurationDatePickerView.titleLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/DurationDatePickerView.swift",
+      "line": 88,
+      "symbol": "DurationDatePickerView.startBtn",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/DurationDatePickerView.swift",
+      "line": 106,
+      "symbol": "DurationDatePickerView.endBtn",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/DurationDatePickerView.swift",
+      "line": 116,
+      "symbol": "DurationDatePickerView.cancelBtn",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/DurationDatePickerView.swift",
+      "line": 126,
+      "symbol": "DurationDatePickerView.confirmBtn",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerView.swift",
+      "line": 13,
+      "symbol": "PickerViewDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerView.swift",
+      "line": 14,
+      "symbol": "PickerViewDelegate.singleColDidSelecte(_:selectedValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerView.swift",
+      "line": 15,
+      "symbol": "PickerViewDelegate.multipleColsDidSelecte(_:selectedValues:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerView.swift",
+      "line": 16,
+      "symbol": "PickerViewDelegate.dateDidSelecte(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerView.swift",
+      "line": 63,
+      "symbol": "PickerView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerView.swift",
+      "line": 310,
+      "symbol": "PickerView.init(pickerStyle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerView.swift",
+      "line": 327,
+      "symbol": "PickerView.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerView.swift",
+      "line": 379,
+      "symbol": "PickerView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerView.swift",
+      "line": 380,
+      "symbol": "PickerView.numberOfComponents(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerView.swift",
+      "line": 392,
+      "symbol": "PickerView.pickerView(_:numberOfRowsInComponent:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerView.swift",
+      "line": 417,
+      "symbol": "PickerView.pickerView(_:didSelectRow:inComponent:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerView.swift",
+      "line": 445,
+      "symbol": "PickerView.pickerView(_:viewForRow:forComponent:reusing:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerView.swift",
+      "line": 487,
+      "symbol": "PickerView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerViewConfig.swift",
+      "line": 12,
+      "symbol": "PickerViewConfig",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerViewConfig.swift",
+      "line": 15,
+      "symbol": "PickerViewConfig.shared",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerViewManager.swift",
+      "line": 11,
+      "symbol": "PickerViewManager",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerViewManager.swift",
+      "line": 12,
+      "symbol": "PickerViewManager.BtnAction",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerViewManager.swift",
+      "line": 13,
+      "symbol": "PickerViewManager.SingleDoneAction",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerViewManager.swift",
+      "line": 14,
+      "symbol": "PickerViewManager.MultipleDoneAction",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerViewManager.swift",
+      "line": 15,
+      "symbol": "PickerViewManager.DateDoneAction",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerViewManager.swift",
+      "line": 16,
+      "symbol": "PickerViewManager.MultipleAssociatedDataType",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerViewManager.swift",
+      "line": 154,
+      "symbol": "PickerViewManager",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerViewManager.swift",
+      "line": 184,
+      "symbol": "PickerViewManager",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerViewUtils.swift",
+      "line": 14,
+      "symbol": "PickerViewUtils",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerViewUtils.swift",
+      "line": 15,
+      "symbol": "PickerViewUtils.resoureBundle",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerViewUtils.swift",
+      "line": 22,
+      "symbol": "PickerViewUtils.addressPlistPath",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerViewUtils.swift",
+      "line": 26,
+      "symbol": "PickerViewUtils.localizedString(key:defaultValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerViewUtils.swift",
+      "line": 50,
+      "symbol": "PickerViewUtils",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerViewUtils.swift",
+      "line": 51,
+      "symbol": "PickerViewUtils.formatDate(date:formatStr:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/PickerViewUtils.swift",
+      "line": 60,
+      "symbol": "PickerViewUtils.toDate(dateStr:dateTypeStr:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/SelectPickerView.swift",
+      "line": 14,
+      "symbol": "SelectPickerView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/SelectPickerView.swift",
+      "line": 141,
+      "symbol": "SelectPickerView.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/SelectPickerView.swift",
+      "line": 166,
+      "symbol": "SelectPickerView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/SelectPickerView.swift",
+      "line": 275,
+      "symbol": "SelectPickerView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/SelectPickerView.swift",
+      "line": 276,
+      "symbol": "SelectPickerView.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/SelectPickerView.swift",
+      "line": 280,
+      "symbol": "SelectPickerView.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/SelectPickerView.swift",
+      "line": 303,
+      "symbol": "SelectPickerView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/SelectPickerView.swift",
+      "line": 304,
+      "symbol": "SelectPickerView.tableView(_:didSelectRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/SelectPickerView.swift",
+      "line": 317,
+      "symbol": "SelectPickerView.tableView(_:willDisplay:forRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/ToolBarView.swift",
+      "line": 11,
+      "symbol": "ToolBarView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/ToolBarView.swift",
+      "line": 12,
+      "symbol": "ToolBarView.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/ToolBarView.swift",
+      "line": 18,
+      "symbol": "ToolBarView.sureAction",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/ToolBarView.swift",
+      "line": 19,
+      "symbol": "ToolBarView.cancelAction",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/ToolBarView.swift",
+      "line": 53,
+      "symbol": "ToolBarView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/CSPickerView/Classes/ToolBarView.swift",
+      "line": 84,
+      "symbol": "ToolBarView.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/coderstar/CoderStar/Projects/iOS_Projects/CSPickerView/Example"
+}

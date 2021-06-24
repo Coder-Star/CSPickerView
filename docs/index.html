@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>CSPickerView  Reference</title>
+    <link rel='stylesheet' type='text/css' href='css/jazzy.css' />
+    <link rel='stylesheet' type='text/css' href='css/highlight.css' />
+    <meta charset='utf-8'>
+    <script src='js/jquery.min.js' defer></script>
+    <script src='js/jazzy.js' defer></script>
+  </head>
+  <body>
+
+
+    <a title='CSPickerView  Reference'></a>
+
+    <header class='header'>
+      <p class='header-col header-col--primary'>
+        <a class='header-link' href='index.html'>
+          CSPickerView Docs
+        </a>
+         (53% documented)
+      </p>
+    
+        <p class='header-col header-col--secondary'>
+          <a class='header-link' href='https://github.com/Coder-Star/CSPickerView'>
+            <img class='header-icon' src='img/gh.png'/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class='breadcrumbs'>
+      <a class='breadcrumb' href='index.html'>CSPickerView Reference</a>
+      <img class='carat' src='img/carat.png' />
+      CSPickerView  Reference
+    </p>
+
+    <div class='content-wrapper'>
+      <nav class='navigation'>
+        <ul class='nav-groups'>
+          <li class='nav-group-name'>
+            <a class='nav-group-name-link' href='Classes.html'>Classes</a>
+            <ul class='nav-group-tasks'>
+              <li class='nav-group-task'>
+                <a class='nav-group-task-link' href='Classes/DatePickerSetting.html'>DatePickerSetting</a>
+              </li>
+              <li class='nav-group-task'>
+                <a class='nav-group-task-link' href='Classes/DurationDatePickerView.html'>DurationDatePickerView</a>
+              </li>
+              <li class='nav-group-task'>
+                <a class='nav-group-task-link' href='Classes/PickerView.html'>PickerView</a>
+              </li>
+              <li class='nav-group-task'>
+                <a class='nav-group-task-link' href='Classes/PickerViewConfig.html'>PickerViewConfig</a>
+              </li>
+              <li class='nav-group-task'>
+                <a class='nav-group-task-link' href='Classes/PickerViewManager.html'>PickerViewManager</a>
+              </li>
+              <li class='nav-group-task'>
+                <a class='nav-group-task-link' href='Classes/PickerViewUtils.html'>PickerViewUtils</a>
+              </li>
+              <li class='nav-group-task'>
+                <a class='nav-group-task-link' href='Classes/SelectPickerView.html'>SelectPickerView</a>
+              </li>
+              <li class='nav-group-task'>
+                <a class='nav-group-task-link' href='Classes/ToolBarView.html'>ToolBarView</a>
+              </li>
+            </ul>
+          </li>
+          <li class='nav-group-name'>
+            <a class='nav-group-name-link' href='Enumerations.html'>Enumerations</a>
+            <ul class='nav-group-tasks'>
+              <li class='nav-group-task'>
+                <a class='nav-group-task-link' href='Enums/CityPickStyle.html'>CityPickStyle</a>
+              </li>
+              <li class='nav-group-task'>
+                <a class='nav-group-task-link' href='Enums/DurationDatePickerViewDateType.html'>DurationDatePickerViewDateType</a>
+              </li>
+              <li class='nav-group-task'>
+                <a class='nav-group-task-link' href='Enums/PickerStyles.html'>PickerStyles</a>
+              </li>
+            </ul>
+          </li>
+          <li class='nav-group-name'>
+            <a class='nav-group-name-link' href='Protocols.html'>Protocols</a>
+            <ul class='nav-group-tasks'>
+              <li class='nav-group-task'>
+                <a class='nav-group-task-link' href='Protocols/PickerViewDelegate.html'>PickerViewDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class='main-content'>
+
+        <section class='section'>
+          <div class='section-content'>
+            
+            <h1 id='cspickerview' class='heading'>CSPickerView</h1>
+
+<p><a href="https://cocoapods.org/pods/CSPickerView"><img src="https://img.shields.io/cocoapods/v/CSPickerView.svg?style=flat" alt="Version"></a>
+<a href="https://cocoapods.org/pods/CSPickerView"><img src="https://img.shields.io/cocoapods/l/CSPickerView.svg?style=flat" alt="License"></a>
+<a href="https://cocoapods.org/pods/CSPickerView"><img src="https://img.shields.io/cocoapods/p/CSPickerView.svg?style=flat" alt="Platform"></a>
+<a href="https://coder-star.github.io/CSPickerView/"><img src="https://img.shields.io/badge/doc-https%3A%2F%2Fcoder--star.github.io%2FCSPickerView%2F-lightgrey" alt="Doc"></a></p>
+<h2 id='安装' class='heading'>安装</h2>
+<h3 id='手动' class='heading'>手动</h3>
+
+<p>将相应文件拷贝到工程中去，注意需要将资源文件也加入进去</p>
+<h3 id='cocoapods' class='heading'>CocoaPods</h3>
+
+<p>提供了二种安装方式</p>
+
+<ul>
+<li>源码方式，方便调试</li>
+<li>framework形式，减少编译时间</li>
+</ul>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'CSPickerView'</span> <span class="c1"># framework形式</span>
+<span class="n">pod</span> <span class="s1">'CSPickerView'</span><span class="p">,</span> <span class="ss">:subspecs</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s2">"source"</span><span class="p">]</span> <span class="c1"># 源码形式</span>
+<span class="n">pod</span> <span class="s1">'CSPickerView'</span><span class="p">,</span> <span class="ss">:subspecs</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s2">"framework"</span><span class="p">]</span> <span class="c1"># framework形式，与 pod 'CSPickerView' 等效</span>
+</code></pre>
+<h2 id='功能介绍' class='heading'>功能介绍</h2>
+
+<ul>
+<li>[x] 支持OC、Swift</li>
+<li>[x] 支持暗黑模式</li>
+<li>[x] 支持多种属性个性化设置</li>
+<li>[x] 国际化支持中文、英文，支持覆写其内容，只需在工程中语言文件key值相同便可覆盖</li>
+</ul>
+
+<p>在<code><a href="Classes/PickerViewConfig.html">PickerViewConfig</a></code>这个单例类中看到很多属性，项目中注释也很完善。</p>
+<pre class="highlight swift"><code><span class="c1">/// 主背景色</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">mainBackgroundColor</span>
+<span class="c1">/// 蒙板颜色</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">maskColor</span>
+<span class="c1">/// 主要文字颜色</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">mainTextColor</span>
+<span class="c1">/// 左侧按钮颜色</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">leftButtonColor</span>
+<span class="c1">/// 右侧按钮颜色</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">rightButtonColor</span>
+<span class="c1">/// 中间文字颜色</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">centerLabelColor</span>
+<span class="c1">/// 分割线颜色</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">lineColor</span>
+<span class="c1">/// 强制语言编码</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">languageCode</span>
+<span class="c1">/// 动画时间</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">animateDuration</span>
+</code></pre>
+<h2 id='效果图' class='heading'>效果图</h2>
+<h3 id='city' class='heading'>City</h3>
+
+<p><img width="50%" src="https://github.com/Coder-Star/CSPickerView/raw/main/Sceenshots/city.png"></p>
+<h3 id='startandenddate' class='heading'>StartAndEndDate</h3>
+
+<table><thead>
+<tr>
+<th style="text-align: center">startAndEndDate</th>
+<th style="text-align: center">startAndEndTime</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: center"><img src="https://github.com/Coder-Star/CSPickerView/raw/main/Sceenshots/startAndEndDate.png" alt="startAndEndDate"></td>
+<td style="text-align: center"><img src="https://github.com/Coder-Star/CSPickerView/raw/main/Sceenshots/startAndEndTime.png" alt="startAndEndTime"></td>
+</tr>
+</tbody></table>
+<h3 id='datepicker' class='heading'>DatePicker</h3>
+
+<table><thead>
+<tr>
+<th style="text-align: center">date</th>
+<th style="text-align: center">time</th>
+<th style="text-align: center">dateAndTime</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: center"><img src="https://github.com/Coder-Star/CSPickerView/raw/main/Sceenshots/date.png" alt="date"></td>
+<td style="text-align: center"><img src="https://github.com/Coder-Star/CSPickerView/raw/main/Sceenshots/time.png" alt="time"></td>
+<td style="text-align: center"><img src="https://github.com/Coder-Star/CSPickerView/raw/main/Sceenshots/dateAndTime.png" alt="dateAndTime"></td>
+</tr>
+</tbody></table>
+<h3 id='picker' class='heading'>Picker</h3>
+
+<table><thead>
+<tr>
+<th style="text-align: center">single</th>
+<th style="text-align: center">multiple</th>
+<th style="text-align: center">multipleAssociated</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: center"><img src="https://github.com/Coder-Star/CSPickerView/raw/main/Sceenshots/single.png" alt="single"></td>
+<td style="text-align: center"><img src="https://github.com/Coder-Star/CSPickerView/raw/main/Sceenshots/multiple.png" alt="multiple"></td>
+<td style="text-align: center"><img src="https://github.com/Coder-Star/CSPickerView/raw/main/Sceenshots/multipleAssociated.png" alt="multipleAssociated"></td>
+</tr>
+</tbody></table>
+<h3 id='select' class='heading'>Select</h3>
+
+<table><thead>
+<tr>
+<th style="text-align: center">singleSelect</th>
+<th style="text-align: center">multipleSelect</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: center"><img src="https://github.com/Coder-Star/CSPickerView/raw/main/Sceenshots/singleSelect.png" alt="singleSelect"></td>
+<td style="text-align: center"><img src="https://github.com/Coder-Star/CSPickerView/raw/main/Sceenshots/multipleSelect.png" alt="multipleSelect"></td>
+</tr>
+</tbody></table>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class='footer' id="footer">
+      <p>&copy; 2021 <a class="link" href="https://coder-star.github.io/" target="_blank" rel="external">CoderStar</a>. All rights reserved. (Last updated: 2021-06-25)</p>
+    </section>  </body>
+</div>
+</html>

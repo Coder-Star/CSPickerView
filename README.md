@@ -3,6 +3,7 @@
 [![Version](https://img.shields.io/cocoapods/v/CSPickerView.svg?style=flat)](https://cocoapods.org/pods/CSPickerView)
 [![License](https://img.shields.io/cocoapods/l/CSPickerView.svg?style=flat)](https://cocoapods.org/pods/CSPickerView)
 [![Platform](https://img.shields.io/cocoapods/p/CSPickerView.svg?style=flat)](https://cocoapods.org/pods/CSPickerView)
+[![Doc](https://img.shields.io/badge/doc-https%3A%2F%2Fcoder--star.github.io%2FCSPickerView%2F-lightgrey)](https://coder-star.github.io/CSPickerView/)
 
 ## 安装
 ### 手动
