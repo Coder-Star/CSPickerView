@@ -334,6 +334,8 @@ class SelectPickerViewTableCell: UITableViewCell {
     lazy var titleLabel: UILabel = {
         let titleLabel = UILabel()
         titleLabel.numberOfLines = 0
+        titleLabel.font = PickerViewConfig.shared.itemLabelFont
+        titleLabel.textColor =  PickerViewConfig.shared.itemLabelColor
         titleLabel.lineBreakMode = .byCharWrapping
         return titleLabel
     }()

@@ -23,30 +23,17 @@ class ViewController: UIViewController {
         case city = "省市区"
         case singleSelect = "单选"
         case multipleSelect = "多选"
+        case style = "自定义样式"
 
         var formateStr: String? {
             switch self {
-            case .startAndEndDate:
-                return nil
-            case .startAndEndTime:
-                return nil
             case .date:
                 return "yyyy-MM-dd"
             case .time:
                 return "HH:mm"
             case .dateAndTime:
                 return "yyyy-MM-dd HH:mm"
-            case .single:
-                return nil
-            case .multiple:
-                return nil
-            case .multipleAssociated:
-                return nil
-            case .city:
-                return nil
-            case .singleSelect:
-                return nil
-            case .multipleSelect:
+            default:
                 return nil
             }
         }
@@ -64,10 +51,11 @@ class ViewController: UIViewController {
         .city,
         .singleSelect,
         .multipleSelect,
+        .style,
     ]
 
     /// 单列
-    private let singleData = ["swift", "ObjecTive-C(主要是用来测试数据很长时候选择的样式哦)", "C", "C++", "java", "php", "python", "ruby", "js"]
+    private let singleData = ["swift", "ObjecTive-C(主要是用来测试数据很长时候选择的样式哦，很长很长很长很长很长的字)", "C", "C++", "java", "php", "python", "ruby", "js"]
 
     /// 多列不关联
     private let multipleData = [
@@ -140,7 +128,7 @@ extension ViewController: UITableViewDelegate {
             }
             popupView.show()
         case .date, .time, .dateAndTime:
-            var dateStyle = DatePickerSetting()
+            let dateStyle = DatePickerSetting()
             if type == .time {
                 dateStyle.dateMode = .time
             } else if type == .dateAndTime {
@@ -176,6 +164,22 @@ extension ViewController: UITableViewDelegate {
             SelectPickerView.showView(title: "多项选择", data: singleData, defaultSelectedIndexs: [1], cancelAction: {}, sureAction: { index, value in
                 self.showAlert("索引：\(index)\n值：\(value)")
             })
+        case .style:
+            PickerViewConfig.shared.maskColor = UIColor.black.withAlphaComponent(0.2)
+            PickerViewConfig.shared.leftButtonColor = UIColor(hexString: "#999999")
+            PickerViewConfig.shared.rightButtonColor = UIColor(hexString: "#32CA99")
+            PickerViewConfig.shared.centerLabelColor = UIColor(hexString: "#333333")
+            PickerViewConfig.shared.lineColor = .white
+            PickerViewConfig.shared.leftButtonFont = UIFont.systemFont(ofSize: 14)
+            PickerViewConfig.shared.rightButtonFont = UIFont.systemFont(ofSize: 14)
+            PickerViewConfig.shared.centerLabelFont = UIFont.systemFont(ofSize: 16, weight: .medium)
+            PickerViewConfig.shared.itemLabelFont = UIFont.systemFont(ofSize: 14)
+            PickerViewConfig.shared.itemLabelColor = UIColor(hexString: "#333333")
+            PickerViewConfig.shared.toolBarViewTopCornerRadius = 10
+
+            PickerViewManager.showSingleColPicker("单列", data: singleData, defaultSelectedIndex: 2, cancelAction: {}, sureAction: { index, value in
+                self.showAlert("索引：\(index)\n值：\(value)")
+            })
         }
     }
 }
@@ -186,5 +190,43 @@ extension ViewController {
         let cancelAction = UIAlertAction(title: "关闭", style: .cancel)
         alertController.addAction(cancelAction)
         self.present(alertController, animated: true, completion: nil)
+    }
+}
+
+extension UIColor {
+    /// 颜色hex值转颜色，如果hex值去除头部符号后不满6位，返回默认色-白色
+    ///
+    /// - Parameters:
+    ///   - hexString: hex值
+    ///   - alpha: 透明度
+    public convenience init(hexString: String, alpha: CGFloat = 1.0) {
+        var hexString = hexString.trimmingCharacters(in: .whitespacesAndNewlines)
+        hexString = hexString.lowercased()
+
+        if hexString.hasPrefix("#") {
+            hexString = String(hexString.dropFirst())
+        }
+        if hexString.hasPrefix("0x") {
+            hexString = String(hexString.dropFirst(2))
+        }
+        // hex值少于6位，返回白色
+        if hexString.count < 6 {
+            self.init(red: 255, green: 255, blue: 255, alpha: alpha)
+        } else {
+            let scanner = Scanner(string: hexString)
+            var color: UInt32 = 0
+            scanner.scanHexInt32(&color)
+
+            let mask = 0x000000FF
+            let r = Int(color >> 16) & mask
+            let g = Int(color >> 8) & mask
+            let b = Int(color) & mask
+
+            let red = CGFloat(r) / 255.0
+            let green = CGFloat(g) / 255.0
+            let blue = CGFloat(b) / 255.0
+
+            self.init(red: red, green: green, blue: blue, alpha: alpha)
+        }
     }
 }

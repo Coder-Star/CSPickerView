@@ -443,12 +443,15 @@ extension PickerView: UIPickerViewDelegate, UIPickerViewDataSource {
     }
 
     final public func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+        // 最多显示两行
         let label = UILabel()
         label.textAlignment = .center
-        label.numberOfLines = 0
-        label.lineBreakMode = .byCharWrapping
-        label.font = UIFont.systemFont(ofSize: 21.0)
+        label.numberOfLines = 2
+        label.lineBreakMode = .byTruncatingTail
+        label.font = PickerViewConfig.shared.itemLabelFont
+        label.textColor = PickerViewConfig.shared.itemLabelColor
         label.text = titleForRow(row, forComponent: component)
+        label.frame = CGRect(x: 10, y: 0, width: UIScreen.main.bounds.width - 20, height: 50)
         return label
     }
 

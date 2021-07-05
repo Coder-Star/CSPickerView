@@ -29,6 +29,7 @@ open class ToolBarView: UIView {
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.textColor = PickerViewConfig.shared.centerLabelColor
+        label.font = PickerViewConfig.shared.centerLabelFont
         label.textAlignment = .center
         label.adjustsFontSizeToFitWidth = true
         return label
@@ -37,16 +38,18 @@ open class ToolBarView: UIView {
     // 取消按钮
     private lazy var clearBtn: UIButton = {
         let btn = UIButton()
-        btn.setTitle(PickerViewUtils.localizedString(key: "CSPickerView.cancel"), for: UIControl.State())
-        btn.setTitleColor(PickerViewConfig.shared.leftButtonColor, for: UIControl.State())
+        btn.setTitle(PickerViewUtils.localizedString(key: "CSPickerView.cancel"), for: .normal)
+        btn.setTitleColor(PickerViewConfig.shared.leftButtonColor, for: .normal)
+        btn.titleLabel?.font = PickerViewConfig.shared.leftButtonFont
         return btn
     }()
 
     // 完成按钮
     private lazy var doneBtn: UIButton = {
         let donebtn = UIButton()
-        donebtn.setTitle(PickerViewUtils.localizedString(key: "CSPickerView.sure"), for: UIControl.State())
-        donebtn.setTitleColor(PickerViewConfig.shared.rightButtonColor, for: UIControl.State())
+        donebtn.setTitle(PickerViewUtils.localizedString(key: "CSPickerView.sure"), for: .normal)
+        donebtn.setTitleColor(PickerViewConfig.shared.rightButtonColor, for: .normal)
+        donebtn.titleLabel?.font = PickerViewConfig.shared.rightButtonFont
         return donebtn
     }()
 
@@ -83,6 +86,16 @@ open class ToolBarView: UIView {
 
     override open func layoutSubviews() {
         super.layoutSubviews()
+
+        if PickerViewConfig.shared.toolBarViewTopCornerRadius > 0 {
+            let fieldPath = UIBezierPath(roundedRect: bounds, byRoundingCorners: [.topLeft, .topRight], cornerRadii: CGSize(width: PickerViewConfig.shared.toolBarViewTopCornerRadius, height: PickerViewConfig.shared.toolBarViewTopCornerRadius))
+            let fieldLayer = CAShapeLayer()
+            fieldLayer.frame = bounds
+            fieldLayer.path = fieldPath.cgPath
+            layer.mask = fieldLayer
+        }
+
+
         let margin: CGFloat = 15
         let contentHeight = bounds.size.height - 1
         contentView.frame = CGRect(x: 0, y: 0, width: bounds.size.width, height: contentHeight)

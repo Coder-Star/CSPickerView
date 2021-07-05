@@ -46,12 +46,31 @@ public class PickerViewConfig: NSObject {
 
     /// 主文字颜色
     public var mainTextColor = PickerViewConfig.blackWhiteColor
+
     /// 左边按钮颜色
     public var leftButtonColor = PickerViewConfig.blackWhiteColor
+    /// 左边按钮字体
+    public var leftButtonFont = UIFont.systemFont(ofSize: UIFont.systemFontSize)
+
     /// 右边按钮颜色
     public var rightButtonColor = PickerViewConfig.blackWhiteColor
+    /// 右边按钮字体
+    public var rightButtonFont = UIFont.systemFont(ofSize: UIFont.systemFontSize)
+
     /// 中间标题颜色
     public var centerLabelColor = PickerViewConfig.blackWhiteColor
+    /// 中间标题字体
+    public var centerLabelFont = UIFont.systemFont(ofSize: UIFont.systemFontSize)
+
+
+    /// Picker选项字体
+    public var itemLabelFont = UIFont.systemFont(ofSize: UIFont.systemFontSize)
+    /// Picker选项颜色
+    public var itemLabelColor = PickerViewConfig.blackWhiteColor
+
+    /// 顶部圆角
+    public var toolBarViewTopCornerRadius: CGFloat = 0
+
     /// 分割线颜色
     public var lineColor: UIColor = {
         if #available(iOS 13.0, *) {

@@ -366,6 +366,7 @@ SWIFT_CLASS("_TtC12CSPickerView10PickerView")
 @end
 
 @class UIColor;
+@class UIFont;
 
 SWIFT_CLASS("_TtC12CSPickerView16PickerViewConfig")
 @interface PickerViewConfig : NSObject
@@ -381,10 +382,22 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PickerViewCo
 @property (nonatomic, strong) UIColor * _Nonnull mainTextColor;
 /// 左边按钮颜色
 @property (nonatomic, strong) UIColor * _Nonnull leftButtonColor;
+/// 左边按钮字体
+@property (nonatomic, strong) UIFont * _Nonnull leftButtonFont;
 /// 右边按钮颜色
 @property (nonatomic, strong) UIColor * _Nonnull rightButtonColor;
+/// 右边按钮字体
+@property (nonatomic, strong) UIFont * _Nonnull rightButtonFont;
 /// 中间标题颜色
 @property (nonatomic, strong) UIColor * _Nonnull centerLabelColor;
+/// 中间标题字体
+@property (nonatomic, strong) UIFont * _Nonnull centerLabelFont;
+/// Picker选项字体
+@property (nonatomic, strong) UIFont * _Nonnull itemLabelFont;
+/// Picker选项颜色
+@property (nonatomic, strong) UIColor * _Nonnull itemLabelColor;
+/// 顶部圆角
+@property (nonatomic) CGFloat toolBarViewTopCornerRadius;
 /// 分割线颜色
 @property (nonatomic, strong) UIColor * _Nonnull lineColor;
 /// 强制使用某语言的编码
@@ -919,6 +932,7 @@ SWIFT_CLASS("_TtC12CSPickerView10PickerView")
 @end
 
 @class UIColor;
+@class UIFont;
 
 SWIFT_CLASS("_TtC12CSPickerView16PickerViewConfig")
 @interface PickerViewConfig : NSObject
@@ -934,10 +948,22 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PickerViewCo
 @property (nonatomic, strong) UIColor * _Nonnull mainTextColor;
 /// 左边按钮颜色
 @property (nonatomic, strong) UIColor * _Nonnull leftButtonColor;
+/// 左边按钮字体
+@property (nonatomic, strong) UIFont * _Nonnull leftButtonFont;
 /// 右边按钮颜色
 @property (nonatomic, strong) UIColor * _Nonnull rightButtonColor;
+/// 右边按钮字体
+@property (nonatomic, strong) UIFont * _Nonnull rightButtonFont;
 /// 中间标题颜色
 @property (nonatomic, strong) UIColor * _Nonnull centerLabelColor;
+/// 中间标题字体
+@property (nonatomic, strong) UIFont * _Nonnull centerLabelFont;
+/// Picker选项字体
+@property (nonatomic, strong) UIFont * _Nonnull itemLabelFont;
+/// Picker选项颜色
+@property (nonatomic, strong) UIColor * _Nonnull itemLabelColor;
+/// 顶部圆角
+@property (nonatomic) CGFloat toolBarViewTopCornerRadius;
 /// 分割线颜色
 @property (nonatomic, strong) UIColor * _Nonnull lineColor;
 /// 强制使用某语言的编码
@@ -1472,6 +1498,7 @@ SWIFT_CLASS("_TtC12CSPickerView10PickerView")
 @end
 
 @class UIColor;
+@class UIFont;
 
 SWIFT_CLASS("_TtC12CSPickerView16PickerViewConfig")
 @interface PickerViewConfig : NSObject
@@ -1487,10 +1514,22 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PickerViewCo
 @property (nonatomic, strong) UIColor * _Nonnull mainTextColor;
 /// 左边按钮颜色
 @property (nonatomic, strong) UIColor * _Nonnull leftButtonColor;
+/// 左边按钮字体
+@property (nonatomic, strong) UIFont * _Nonnull leftButtonFont;
 /// 右边按钮颜色
 @property (nonatomic, strong) UIColor * _Nonnull rightButtonColor;
+/// 右边按钮字体
+@property (nonatomic, strong) UIFont * _Nonnull rightButtonFont;
 /// 中间标题颜色
 @property (nonatomic, strong) UIColor * _Nonnull centerLabelColor;
+/// 中间标题字体
+@property (nonatomic, strong) UIFont * _Nonnull centerLabelFont;
+/// Picker选项字体
+@property (nonatomic, strong) UIFont * _Nonnull itemLabelFont;
+/// Picker选项颜色
+@property (nonatomic, strong) UIColor * _Nonnull itemLabelColor;
+/// 顶部圆角
+@property (nonatomic) CGFloat toolBarViewTopCornerRadius;
 /// 分割线颜色
 @property (nonatomic, strong) UIColor * _Nonnull lineColor;
 /// 强制使用某语言的编码
