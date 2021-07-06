@@ -11,7 +11,7 @@ import SnapKit
 import UIKit
 
 class ViewController: UIViewController {
-    enum dataType: String {
+    enum dataType: String, CaseIterable {
         case startAndEndDate = "起止日期"
         case startAndEndTime = "起止时间"
         case date = "日期"
@@ -38,21 +38,6 @@ class ViewController: UIViewController {
             }
         }
     }
-
-    private let dataArr: [dataType] = [
-        .startAndEndDate,
-        .startAndEndTime,
-        .date,
-        .time,
-        .dateAndTime,
-        .single,
-        .multiple,
-        .multipleAssociated,
-        .city,
-        .singleSelect,
-        .multipleSelect,
-        .style,
-    ]
 
     /// 单列
     private let singleData = ["swift", "ObjecTive-C(主要是用来测试数据很长时候选择的样式哦，很长很长很长很长很长的字)", "C", "C++", "java", "php", "python", "ruby", "js"]
@@ -100,11 +85,11 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataArr.count
+        return dataType.allCases.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let type = dataArr[indexPath.row]
+        let type = dataType.allCases[indexPath.row]
         var tableCell = tableView.dequeueReusableCell(withIdentifier: "tableCell")
         if tableCell == nil {
             tableCell = UITableViewCell(style: .default, reuseIdentifier: "tableCell")
@@ -117,7 +102,7 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let type = dataArr[indexPath.row]
+        let type = dataType.allCases[indexPath.row]
         switch type {
         case .startAndEndDate, .startAndEndTime:
             let start = Date()

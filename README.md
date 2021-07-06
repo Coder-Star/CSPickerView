@@ -48,6 +48,18 @@ public var lineColor
 public var languageCode
 /// 动画时间
 public var animateDuration
+/// 左边按钮字体
+public var leftButtonFont
+/// 右边按钮字体
+public var rightButtonFont
+/// 中间标题字体
+public var centerLabelFont
+/// Picker选项字体
+public var itemLabelFont
+/// Picker选项颜色
+public var itemLabelColor
+/// 顶部圆角
+public var toolBarViewTopCornerRadius
 ```
 
 ## 效果图
