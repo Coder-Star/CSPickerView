@@ -1,10 +1,10 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target armv7-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CSPickerView
 import Foundation
 import Swift
 import UIKit
-@objc public protocol PickerViewDelegate : AnyObject {
+@objc public protocol PickerViewDelegate {
   @objc func singleColDidSelecte(_ selectedIndex: Swift.Int, selectedValue: Swift.String)
   @objc func multipleColsDidSelecte(_ selectedIndexs: [Swift.Int], selectedValues: [Swift.String])
   @objc func dateDidSelecte(_ selectedDate: Foundation.Date)
@@ -22,8 +22,8 @@ import UIKit
   case multiple
   case multipleAssociated
   case date
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -32,8 +32,8 @@ import UIKit
   case province
   case city
   case area
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -69,8 +69,8 @@ extension PickerView {
     @objc get
   }
   @objc public static func localizedString(key: Swift.String, defaultValue: Swift.String? = nil) -> Swift.String?
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 extension PickerViewUtils {
   @objc public static func formatDate(date: Foundation.Date, formatStr: Swift.String) -> Swift.String
@@ -122,8 +122,8 @@ extension SelectPickerView : UIKit.UITableViewDelegate {
   public var formatStr: Swift.String {
     get
   }
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
