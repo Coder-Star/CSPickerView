@@ -23,7 +23,6 @@ Pod::Spec.new do |s|
   s.default_subspec = 'framework'
 
   s.subspec 'source' do |source|
-    source.source_files = 'LTXiOSUtils/Classes/Util/**/*.swift'
     source.source_files = 'CSPickerView/Classes/**/*'
     source.resource_bundles = {
       'CSPickerView' => ['CSPickerView/Assets/**/*']
