@@ -72,6 +72,7 @@ sed -i "" "1s/^/${FAT_SWIFT_HEADER_ARCHITECTURE}/" ${FAT_SWIFT_HEADER_PATH}
 rm -rf ${PROJECT_PARH}/build/
 rm -rf ${BUILD_PATH}
 rm -rf "${FRAMEWORK_PATH}/${TARGET_NAME}.framework/_CodeSignature"
+rm -rf "${FRAMEWORK_PATH}/${TARGET_NAME}.framework/Modules/${TARGET_NAME}.swiftmodule/Project"
 
 # 打开 目标输出文件夹
 #open "${FRAMEWORK_PATH}"
