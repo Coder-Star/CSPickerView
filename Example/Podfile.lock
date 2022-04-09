@@ -1,7 +1,7 @@
 PODS:
-  - CSPickerView (1.0.1):
-    - CSPickerView/framework (= 1.0.1)
-  - CSPickerView/framework (1.0.1)
+  - CSPickerView (1.0.2):
+    - CSPickerView/framework (= 1.0.2)
+  - CSPickerView/framework (1.0.2)
   - LookinServer (1.0.2)
   - SnapKit (4.2.0)
 
@@ -20,10 +20,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CSPickerView: 7584847fbe9a84c25861f5bd306b8d338d346a2a
+  CSPickerView: 2c5e5d9e574ef86ff36e96feb69c5bd982ca1296
   LookinServer: d6874df8b58096c8d463817b6baaa3abc21d31f7
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
 PODFILE CHECKSUM: 8b6465639084f7e8d7023f43e2e813850520b8b9
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
