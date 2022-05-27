@@ -137,7 +137,7 @@
 				607FACCE1AFB9204008FA782 /* Resources */,
 				71A92FB01ADE5F1E2EDBF26C /* [CP] Embed Pods Frameworks */,
 				2DB72D1B266E724C00D29FB5 /* Embed Frameworks */,
-				7607EB58F5EF4D559053E092 /* [CP] Copy Pods Resources */,
+				30E1B64DA5389C7F8DD1F011 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +199,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		30E1B64DA5389C7F8DD1F011 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CSPickerView_Example/Pods-CSPickerView_Example-resources.sh",
+				"${PODS_ROOT}/../../CSPickerView/Frameworks/CSPickerView.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CSPickerView.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CSPickerView_Example/Pods-CSPickerView_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		71A92FB01ADE5F1E2EDBF26C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,24 +235,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CSPickerView_Example/Pods-CSPickerView_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7607EB58F5EF4D559053E092 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CSPickerView_Example/Pods-CSPickerView_Example-resources.sh",
-				"${PODS_ROOT}/../../CSPickerView/Frameworks/CSPickerView.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CSPickerView.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CSPickerView_Example/Pods-CSPickerView_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BCA3F7D177B70771E7A5E7C0 /* [CP] Check Pods Manifest.lock */ = {

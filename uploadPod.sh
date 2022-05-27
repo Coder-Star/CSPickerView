@@ -15,20 +15,13 @@ if [ $COMMIT_MESSAGE ]; then
 echo ${COMMIT_MESSAGE}
 fi
 
-#BUILD_FRAMEWORK_SH_PATH="/buildFramework.sh"
-#sh ${BUILD_FRAMEWORK_SH_PATH}
-
-#git stash
-#git pull --tags
-#git stash pop
-
 VERSION_NUMBER=`grep -E 's.version.*=' ${POD_NAME}.podspec | awk -F \' '{print $2}'`
 
 LINE_NUMBER=`grep -nE 's.version.*=' ${POD_NAME}.podspec | cut -d : -f1`
 sed -i "" "${LINE_NUMBER}s/${VERSION_NUMBER}/${NEW_VERSION_NUMBER}/g" ${POD_NAME}.podspec
 
 git add .
-git commit -m ${NEW_VERSION_NUMBER}
+git commit -m ${COMMIT_MESSAGE}
 git tag ${NEW_VERSION_NUMBER}
 git push --tags
 
