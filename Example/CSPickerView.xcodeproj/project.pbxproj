@@ -160,7 +160,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 6C67KJ54CD;
+						DevelopmentTeam = SJ7JKKYH4C;
 						LastSwiftMigration = 0900;
 					};
 				};
@@ -401,7 +401,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6C67KJ54CD;
+				DEVELOPMENT_TEAM = SJ7JKKYH4C;
 				INFOPLIST_FILE = CSPickerView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
