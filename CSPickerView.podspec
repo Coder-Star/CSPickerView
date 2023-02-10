@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CSPickerView'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'CSPickerView'
   s.description      = "多样式底部弹出样式选择器"
   s.homepage         = 'https://github.com/Coder-Star/CSPickerView'

@@ -34,7 +34,7 @@ public class PickerViewUtils: NSObject {
             language = "en"
         }
         guard let bundle = resoureBundle else {
-            assertionFailure("Bunle加载失败")
+            assertionFailure("Bundle加载失败")
             return nil
         }
         guard let localizedStringPath = bundle.path(forResource: language, ofType: "lproj"), let localizedStringBundle = Bundle(path: localizedStringPath) else {

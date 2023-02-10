@@ -46,11 +46,11 @@ open class ToolBarView: UIView {
 
     // 完成按钮
     private lazy var doneBtn: UIButton = {
-        let donebtn = UIButton()
-        donebtn.setTitle(PickerViewUtils.localizedString(key: "CSPickerView.sure"), for: .normal)
-        donebtn.setTitleColor(PickerViewConfig.shared.rightButtonColor, for: .normal)
-        donebtn.titleLabel?.font = PickerViewConfig.shared.rightButtonFont
-        return donebtn
+        let doneBtn = UIButton()
+        doneBtn.setTitle(PickerViewUtils.localizedString(key: "CSPickerView.sure"), for: .normal)
+        doneBtn.setTitleColor(PickerViewConfig.shared.rightButtonColor, for: .normal)
+        doneBtn.titleLabel?.font = PickerViewConfig.shared.rightButtonFont
+        return doneBtn
     }()
 
     override public init(frame: CGRect) {
@@ -103,8 +103,8 @@ open class ToolBarView: UIView {
         let doneBtnSize = doneBtn.sizeThatFits(CGSize(width: 0, height: contentHeight))
         clearBtn.frame = CGRect(x: margin, y: 0, width: clearBtnSize.width, height: contentHeight)
         doneBtn.frame = CGRect(x: bounds.size.width - doneBtnSize.width - margin, y: 0, width: doneBtnSize.width, height: contentHeight)
-        let titleX = clearBtn.frame.maxX + margin
-        let titleW = bounds.size.width - titleX - doneBtnSize.width - margin
+        let titleX = max(clearBtn.frame.maxX + margin, bounds.size.width - doneBtn.frame.minX) 
+        let titleW = bounds.size.width - titleX * 2
 
         titleLabel.frame = CGRect(x: titleX, y: 0.0, width: titleW, height: contentHeight)
     }

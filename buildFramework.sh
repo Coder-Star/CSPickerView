@@ -19,8 +19,8 @@ rm -rf ${BUILD_PATH}
 cd ${PROJECT_PARH}
 
 # 构建真机和模拟器版本
-xcodebuild -target "${TARGET_NAME}" -configuration ${BUILD_MODE} -arch arm64 -arch armv7 -arch armv7s ONLY_ACTIVE_ARCH=NO defines_module=yes -sdk iphoneos BUILD_DIR="${BUILD_PATH}" BUILD_ROOT="${BUILD_PATH}" clean build
-xcodebuild -target "${TARGET_NAME}" -configuration ${BUILD_MODE} -arch x86_64 -arch i386 ONLY_ACTIVE_ARCH=NO defines_module=yes -sdk iphonesimulator BUILD_DIR="${BUILD_PATH}" BUILD_ROOT="${BUILD_PATH}" clean build
+xcodebuild -target "${TARGET_NAME}" -configuration ${BUILD_MODE} -arch arm64 ONLY_ACTIVE_ARCH=NO defines_module=yes -sdk iphoneos BUILD_DIR="${BUILD_PATH}" BUILD_ROOT="${BUILD_PATH}" clean build
+xcodebuild -target "${TARGET_NAME}" -configuration ${BUILD_MODE} -arch x86_64 ONLY_ACTIVE_ARCH=NO defines_module=yes -sdk iphonesimulator BUILD_DIR="${BUILD_PATH}" BUILD_ROOT="${BUILD_PATH}" clean build
 
 # 将框架结构复制到目标输出文件夹,删除之前的framework
 rm -rf "${FRAMEWORK_PATH}/${TARGET_NAME}.framework"
